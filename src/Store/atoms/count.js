@@ -3,7 +3,7 @@ import { atom, selector } from "recoil";
 //atom takes 1 parameter i.e object
 //inside object there is key and default value
 //recoil excepts a key for an atom for distinguish b/w other atoms, uniquely identify the atom
-//default value is the initial value and it can be anything like empty value etc...
+//default value is the initial value and it can be anything like empty string etc...
 
 const countAtom = atom({
     key: "countAtom", 
