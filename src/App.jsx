@@ -38,9 +38,9 @@ function EvenCountRenderer(){
 function Buttons() {
   const setCount = useSetRecoilState(countAtom);
 
-  //performance wise its a better approach as re-render will only happends in countrerender button
+  //performance wise its a better approach as re-render will only happens in count rerender button comp. only
   //so use useSetRecoilState instead of useRecoilState as it will give you count value so if this is being used in this component and if its changes the component will also re-render
-  //and also use setCount(count => count + 1) way of setting a value this will get the current value of the count and return the updated value.
+  //and also use setCount(count => count + 1) another way of setting a value this will get the current value of the count and return the updated value.
   return <div>
     <button onClick={() => {
       setCount(count => count + 1)
